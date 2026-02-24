@@ -1,0 +1,19 @@
+.link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: var(--inner-gap);
+
+  width: 172px;
+  padding: 8px;
+  border-radius: var(--border-radius);
+
+  color: var(--color-background);
+  background-color: var(--color-text-primary);
+  box-shadow: var(--shadow-base);
+
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+}

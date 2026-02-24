@@ -1,0 +1,14 @@
+.icon {
+  display: inline-block;
+
+  background-color: currentColor;
+  pointer-events: none;
+}
+
+.inbox {
+  mask: url(../../assets/icons/inbox.svg) center / contain no-repeat;
+}
+
+.plus {
+  mask: url(../../assets/icons/plus-2.svg) center / contain no-repeat;
+}
