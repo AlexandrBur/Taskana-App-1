@@ -1,0 +1,11 @@
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  margin: auto;
+
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+}

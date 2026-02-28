@@ -1,0 +1,32 @@
+:root {
+  /* ##############SHADOWS############## */
+
+  /* Цвета теней: */
+  --shadow-color-base: rgba(0, 0, 0, 0.2);   /* 20% opacity - base/default */
+  --shadow-color-sm: rgba(0, 0, 0, 0.1);  /* 10% opacity - sm/default */
+
+  /* Единые offset и blur: */
+  --shadow-offset-x: 2px;
+  --shadow-offset-y: 2px;
+  --shadow-blur: 4px;
+  --shadow-spread: 0px;
+
+
+  /* Семантические переменные: */
+
+  /* Base-shadow: */
+  --shadow-base:
+    var(--shadow-offset-x)
+    var(--shadow-offset-y)
+    var(--shadow-blur)
+    var(--shadow-spread)
+    var(--shadow-color-base);
+
+  /* Small-shadow: */
+  --shadow-sm:
+    var(--shadow-offset-x)
+    var(--shadow-offset-y)
+    var(--shadow-blur)
+    var(--shadow-spread)
+    var(--shadow-color-sm);
+}

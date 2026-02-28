@@ -1,0 +1,35 @@
+:root {
+  /* Заголовки: */
+    /* H1: */
+  --fs-h1: 32px;
+  --lh-h1: 40px;
+  --fw-h1: 700;
+
+    /* H2: */
+  --fs-h2: 24px;
+  --lh-h2: 32px;
+  --fw-h2: 700;
+
+    /* H3: */
+  --fs-h3: 18px;
+  --lh-h3: 24px;
+  --fw-h3: 700;
+
+    /* Обычный текст: */
+    /* Large: */
+  --fs-lg: 18px;
+  --lh-lg: 24px;
+
+    /* Middle: */
+  --fs-md: 16px;
+  --lh-md: 24px;
+
+    /* Small: */
+  --fs-sm: 14px;
+  --lh-sm: 20px;
+
+    /* Начертания: */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}

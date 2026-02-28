@@ -1,0 +1,19 @@
+.wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 16px;
+
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: var(--fw-h2);
+}
+
+.text {
+  margin-bottom: 40px;
+
+  font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
+}

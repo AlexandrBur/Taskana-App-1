@@ -1,0 +1,26 @@
+.mainContainer {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.title {
+  position: sticky;
+  top: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: start;
+
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  font-weight: var(--fw-h1);
+
+  background-color: var(--color-background);
+}
