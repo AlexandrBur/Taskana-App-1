@@ -49,9 +49,9 @@
   --color-header:               #000000;             /* base/black - фон хедера */
 
 
-  --border-radius: 8px;
-  --inner-gap: 8px;
-
-  --header-height: 64px;
-  --header-z-index: 100;
+  /* Дополнительные переменные: */
+  --border-radius: 8px;     /* Основные скругления по макету */
+  --inner-gap: 8px;         /* Основной gap по макету */
+  --header-height: 64px;    /* Высота header для расчета оставшегося свободного пространства */
+  --header-z-index: 100;    /* Z-index для header (корректировка тени)*/
 }
