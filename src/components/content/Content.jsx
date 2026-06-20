@@ -1,8 +1,7 @@
-import NavBar from '../navBar/NavBar';
-import SideBar from '../sideBar/SideBar';
+import { NavBar, SideBar } from '@/components';
 import styles from './content.module.css';
 
-const Content = ({ children }) => {
+export const Content = ({ children }) => {
   return (
     <div className={styles.container}>
       <aside className={styles.sideBarLeft}>
@@ -19,5 +18,3 @@ const Content = ({ children }) => {
     </div>
   );
 };
-
-export default Content;

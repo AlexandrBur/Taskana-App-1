@@ -1,57 +1,63 @@
 :root {
-  /* ############## COLORS ############## */
+  color-scheme: light dark;
 
-  /* Neutral - основные градации серого: */
-  --neutral-0:    #FFFFFF;    /* Основной фон */
-  --neutral-100:  #FBFBFB;    /* Фон боковых лайаутов */
-  --neutral-200:  #F3F3F3;    /* Фон вторичных кнопок, ховер списков */
-  --neutral-300:  #ECECEC;    /* Ховер вторичных кнопок */
-  --neutral-400:  #BFBFBF;    /* Бордеры */
-  --neutral-500:  #8C8C8C;    /* Иконки */
-  --neutral-600:  #6C6C6C;    /* Второстепенный текст, ховер бордера */
-  --neutral-700:  #393939;    /* -- */
-  --neutral-800:  #1C1C1C;    /* Основной текст */
-  --neutral-900:  #141414;    /* -- */
-
+  /* Primary и base цвета остаются одинаковыми в светлой и тёмной теме!!! */
+  /* Base - базовые оттенки: */
+  --base-white:       #ffffff;               /* Основной текст, бордер фокуса */
+  --base-600:         #6C6C6C;               /* Второстепенный текст */
+  --base-800:         #262626;               /* -- */
+  --base-900:         #141414;               /* Инверсия текста, бордер фокуса */
+  --base-black:       #000000;               /* Фон хедера */
 
   /* Primary (красный) - акцентный цвет: */
-  --primary-0:    #FFF4F4;    /* Заливка приоритета 03 */
-  --primary-100:  #FFCECE;    /* -- */
-  --primary-200:  #FCA9A9;    /* -- */
-  --primary-300:  #F25959;    /* Pressed контролов */
-  --primary-400:  #D51010;    /* Основной цвет {*} */
-  --primary-500:  #A60C0C;    /* Ховер */
-  --primary-600:  #760909;    /* -- */
+  --primary-0:        #FFF4F4;    /* Заливка приоритета 03 */
+  --primary-100:      #FFCECE;    /* -- */
+  --primary-200:      #FCA9A9;    /* -- */
+  --primary-300:      #F25959;    /* Pressed контролов */
+  --primary-400:      #D51010;    /* Основной цвет {*} */
+  --primary-500:      #A60C0C;    /* Ховер */
+  --primary-600:      #760909;    /* -- */
 
   /* Основной градиент сверху вниз: */
-  --gradient-primary: linear-gradient(
-    to bottom,
-    var(--primary-400),
-    var(--primary-500)
-  );
+  --gradient-primary: linear-gradient(to bottom, var(--primary-400), var(--primary-500));
 
 
-  /* Семантические переменные: */
-  --color-background:           var(--neutral-0);     /* Основной фон */
-  --color-surface:              var(--neutral-100);   /* Фон боковых лайаутов */
-  --color-surface-secondary:    var(--neutral-200);   /* Фон вторичных кнопок, ховер списков */
-  --color-hover:                var(--neutral-300);   /* Ховер вторичных кнопок */
-  --color-border:               var(--neutral-400);   /* Бордеры */
-  --color-icon:                 var(--neutral-500);   /* Иконки */
-  --color-text-secondary:       var(--neutral-600);   /* Второстепенный текст, ховер бордера */
-  --color-text-primary:         var(--neutral-800);   /* Основной текст */
+  /* Neutral - основные градации серого (светлая тема): */
+  --neutral-0:        #FFFFFF;    /* Основной фон */
+  --neutral-100:      #FBFBFB;    /* Фон боковых лайаутов */
+  --neutral-200:      #F3F3F3;    /* Фон вторичных кнопок, ховер списков */
+  --neutral-300:      #ECECEC;    /* Ховер вторичных кнопок */
+  --neutral-400:      #BFBFBF;    /* Бордеры */
+  --neutral-500:      #8C8C8C;    /* Иконки */
+  --neutral-600:      #6C6C6C;    /* Второстепенный текст, ховер бордера */
+  --neutral-700:      #393939;    /* Ховер первичных кнопок */
+  --neutral-800:      #1C1C1C;    /* Основной текст */
+  --neutral-900:      #141414;    /* -- */
 
-  --color-accent:               var(--primary-400);   /* Основной цвет {*} */
-  --color-accent-hover:         var(--primary-500);   /* Ховер */
-  --color-accent-pressed:       var(--primary-300);   /* Pressed контролов */
-  --color-accent-light:         var(--primary-0);     /* Заливка приоритета 03 */
 
-  --color-header:               #000000;             /* base/black - фон хедера */
+  /* Neutral - основные градации серого (темная тема): */
+  &.dark {
+    --neutral-0:      #141414;    /* Основной фон */
+    --neutral-100:    #1C1C1C;    /* Фон боковых лайаутов */
+    --neutral-200:    #262626;    /* Фон вторичных кнопок, ховер списков */
+    --neutral-300:    #333333;    /* Ховер вторичных кнопок */
+    --neutral-400:    #6C6C6C;    /* Бордеры */
+    --neutral-500:    #8C8C8C;    /* Иконки */
+    --neutral-600:    #BFBFBF;    /* Второстепенный текст, ховер бордера */
+    --neutral-700:    #ECECEC;    /* Ховер первичных кнопок */
+    --neutral-800:    #FBFBFB;    /* Основной текст */
+    --neutral-900:    #FFFFFF;    /* -- */
+  }
 
 
   /* Дополнительные переменные: */
-  --border-radius: 8px;     /* Основные скругления по макету */
-  --inner-gap: 8px;         /* Основной gap по макету */
   --header-height: 64px;    /* Высота header для расчета оставшегося свободного пространства */
   --header-z-index: 100;    /* Z-index для header (корректировка тени)*/
+  --slider-z-index: 0;      /* Z-index для div/slider в ThemeSwitcher*/
+  --icon-z-index: 1;        /* Z-index для icon в ThemeSwitcher*/
+  --border-radius: 8px;     /* Основные скругления по макету */
+  --inner-gap: 8px;         /* Основной gap по макету */
+  --switch-gap: 4px;        /* ThemeSwitcher gap/padding */
+  --duration: 0.2s;         /* Базовая продолжительность анимаций */
+  --icon-size: 32px;        /* Размер span/icon в ThemeSwitcher */
 }

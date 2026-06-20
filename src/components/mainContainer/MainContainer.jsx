@@ -1,13 +1,14 @@
-import TaskList from '../taskList/TaskList';
+import { TaskList } from '@/components';
 import styles from './mainContainer.module.css';
 
-const MainContainer = () => {
+export const MainContainer = () => {
   return (
     <div className={styles.mainContainer}>
-      <h1 className={styles.title}>Входящие</h1>
+      {/* Скрытый h1 для SEO и доступности */}
+      <h1 className="visuallyHidden">Панель управления задачами</h1>
+
+      <h2 className={styles.title}>Входящие</h2>
       <TaskList />
     </div>
   );
 };
-
-export default MainContainer;

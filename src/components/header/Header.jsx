@@ -1,16 +1,17 @@
-import Button from '../button/Button';
-import Logo from '../logo/Logo';
+import { Button, Logo, ThemeSwitcher } from '@/components';
 import styles from './header.module.css';
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className={styles.header}>
       <Logo />
-      <Button svg='plus'>
-        Создать
-      </Button>
+      <div className={styles.right}>
+        <Button
+          label="Создать"
+          icon="Create"
+        />
+        <ThemeSwitcher />
+      </div>
     </header>
   );
 };
-
-export default Header;

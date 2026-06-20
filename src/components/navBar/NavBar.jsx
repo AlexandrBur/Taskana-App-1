@@ -1,11 +1,9 @@
-import NavBarList from '../navBarList/NavBarList';
+import { NavBarList } from '@/components';
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
     <nav>
       <NavBarList />
     </nav>
   );
 };
-
-export default NavBar;

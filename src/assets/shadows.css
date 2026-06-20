@@ -1,32 +1,29 @@
 :root {
-  /* ##############SHADOWS############## */
+  /* Единые offset-x, offset-y, blur, spread, color: */
+  /* Base shadow: */
+  --shadow-base: 2px 2px 4px 0 var(--shadow-color-base);
+  --shadow-base-hover: 2px 8px 12px 0 var(--shadow-color-base-hover);
 
-  /* Цвета теней: */
-  --shadow-color-base: rgba(0, 0, 0, 0.2);   /* 20% opacity - base/default */
-  --shadow-color-sm: rgba(0, 0, 0, 0.1);  /* 10% opacity - sm/default */
+  /* Small shadow: */
+  --shadow-sm: 2px 2px 4px 0 var(--shadow-color-sm);
+  --shadow-sm-hover: 2px 8px 12px 0 var(--shadow-color-sm-hover);
 
-  /* Единые offset и blur: */
-  --shadow-offset-x: 2px;
-  --shadow-offset-y: 2px;
-  --shadow-blur: 4px;
-  --shadow-spread: 0px;
+  /* Тени для ThemeSwitcher и Button: */
+  --shadow-header: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  --shadow-header-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.8);
 
 
-  /* Семантические переменные: */
+  /* Цвета теней светлой темы: */
+  --shadow-color-base: rgba(0, 0, 0, 0.2);           /* 20% opacity - base/default */
+  --shadow-color-base-hover: rgba(0, 0, 0, 0.25);    /* 25% opacity - base/hover */
+  --shadow-color-sm: rgba(0, 0, 0, 0.1);             /* 10% opacity - sm/default */
+  --shadow-color-sm-hover: rgba(0, 0, 0, 0.2);       /* 20% opacity - sm/hover */
 
-  /* Base-shadow: */
-  --shadow-base:
-    var(--shadow-offset-x)
-    var(--shadow-offset-y)
-    var(--shadow-blur)
-    var(--shadow-spread)
-    var(--shadow-color-base);
-
-  /* Small-shadow: */
-  --shadow-sm:
-    var(--shadow-offset-x)
-    var(--shadow-offset-y)
-    var(--shadow-blur)
-    var(--shadow-spread)
-    var(--shadow-color-sm);
+  &.dark {
+  /* Цвета теней темной темы: */
+  --shadow-color-base: rgba(0, 0, 0, 0.5);           /* 50% opacity - base/default */
+  --shadow-color-base-hover: rgba(0, 0, 0, 0.8);    /* 80% opacity - base/hover */
+  --shadow-color-sm: rgba(0, 0, 0, 0.3);             /* 30% opacity - sm/default */
+  --shadow-color-sm-hover: rgba(0, 0, 0, 0.6);       /* 60% opacity - sm/hover */
+  }
 }

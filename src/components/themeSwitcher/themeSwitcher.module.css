@@ -1,0 +1,72 @@
+.main {
+  position: relative;
+
+  width: 76px;
+  height: 40px;
+  padding: var(--switch-gap);
+  border-radius: var(--border-radius);
+  border: none;
+
+  display: flex;
+  gap: var(--switch-gap);
+
+  background-color: var(--base-800);
+  box-shadow: var(--shadow-header);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid var(--base-white);
+    outline-offset: 2px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: var(--shadow-header-hover);
+  }
+
+  &:hover .slider,
+  &:focus-visible .slider {
+    background-color: var(--base-white);
+  }
+
+  &:hover .icon.active,
+  &:focus-visible .icon.active {
+    color: var(--base-900);
+  }
+}
+
+.slider {
+  will-change: transform;
+
+  position: absolute;
+  z-index: var(--slider-z-index);
+  top: var(--switch-gap);
+  left: var(--switch-gap);
+
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: calc(var(--border-radius) / 2);
+  background-color: var(--primary-400);
+  box-shadow: var(--shadow-header);
+  transition: transform var(--duration) ease;
+  pointer-events: none;
+}
+
+.slider.dark {
+  transform: translateX(calc(var(--icon-size) + var(--switch-gap)));
+}
+
+.icon {
+  position: relative;
+  z-index: var(--icon-z-index);
+
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+
+  color: var(--base-600);
+}
+
+.icon.active {
+  color: var(--base-white);
+}

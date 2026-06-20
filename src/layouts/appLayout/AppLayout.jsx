@@ -1,8 +1,7 @@
-import Content from '../../components/content/Content';
-import Header from '../../components/header/Header';
-import IncomingTasks from '../../pages/incomingTasks/IncomingTasks';
+import { Header, Content } from '@/components';
+import { IncomingTasks } from '@/pages';
 
-const AppLayout = () => {
+export const AppLayout = () => {
   return (
     <>
       <Header />
@@ -12,5 +11,3 @@ const AppLayout = () => {
     </>
   );
 };
-
-export default AppLayout;

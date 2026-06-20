@@ -1,14 +1,16 @@
-import logoSvg from '../../assets/images/logo.svg';
+import { Icon } from '@/components';
+import styles from './logo.module.css';
 
-const Logo = () => {
+export const Logo = () => {
   return (
-    <a href="#">
-      <img
-        src={logoSvg}
-        alt="Logo"
+    <a
+      className={styles.main}
+      href="#"
+      aria-label="Логотип">
+      <Icon
+        name="Logo"
+        ariaHidden
       />
     </a>
   );
 };
-
-export default Logo;

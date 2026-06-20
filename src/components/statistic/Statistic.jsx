@@ -1,18 +1,16 @@
-import notebook from '../../assets/images/notebook.svg';
+import { Illustration } from '@/components';
 import styles from './statistic.module.css';
 
-const Statistic = () => {
+export const Statistic = () => {
   return (
     <div className={styles.statistic}>
-      <img
-        src={notebook}
-        alt="notebook"
-      />
+      <Illustration name="Side" />
       <p>
-        Здесь мы поможем тебе управлять твоими задачами, отслеживать статистику и самочувствие.
+        Здесь мы поможем тебе управлять твоими
+        <br />
+        задачами, отслеживать статистику
+        <br />и самочувствие.
       </p>
     </div>
   );
 };
-
-export default Statistic;

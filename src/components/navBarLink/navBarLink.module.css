@@ -8,12 +8,23 @@
   padding: 8px;
   border-radius: var(--border-radius);
 
-  color: var(--color-background);
-  background-color: var(--color-text-primary);
+  color: var(--neutral-0);
+  background-color: var(--neutral-800);
   box-shadow: var(--shadow-base);
 
   font-size: var(--fs-md);
   line-height: var(--lh-md);
   font-weight: var(--fw-semibold);
   text-decoration: none;
+}
+
+.link:hover,
+.link:focus-visible {
+  background-color: var(--neutral-700);
+  box-shadow: var(--shadow-base-hover);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 2px;
 }

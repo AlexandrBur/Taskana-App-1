@@ -1,12 +1,14 @@
-import styles from './icon.module.css';
+import * as Icons from './icons';
 
-const Icon = ({ svg, width = '24px', height = '24px' }) => {
+export const Icon = ({ name, ariaHidden = true, ...props }) => {
+  const SpecificIcon = Icons[`${name}Icon`];
+
+  if (!SpecificIcon) return null;
+
   return (
-    <span
-      style={{width, height}}
-      className={`${styles.icon} ${styles[svg]}`}
-      aria-hidden="true"></span>
+    <SpecificIcon
+      aria-hidden={ariaHidden}
+      {...props}
+    />
   );
 };
-
-export default Icon;

@@ -1,8 +1,7 @@
-import MainContainer from '../../components/mainContainer/MainContainer';
-import Footer from '../../components/footer/Footer';
+import { MainContainer, Footer } from '@/components';
 import styles from './incomingTasks.module.css';
 
-const IncomingTasks = () => {
+export const IncomingTasks = () => {
   return (
     <div className={styles.wrapper}>
       <MainContainer />
@@ -10,5 +9,3 @@ const IncomingTasks = () => {
     </div>
   );
 };
-
-export default IncomingTasks;

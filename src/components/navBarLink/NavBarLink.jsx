@@ -1,15 +1,20 @@
-import Icon from '../icon/Icon';
+import { Icon } from '@/components';
 import styles from './navBarLink.module.css';
 
-const NavBarLink = ({ children, svg }) => {
+export const NavBarLink = (props) => {
+  const { text = '', href, icon, ...linkProps } = props;
   return (
     <a
       className={styles.link}
-      href="#">
-      <Icon svg={svg} />
-      {children}
+      href={href}
+      {...linkProps}>
+      {icon && (
+        <Icon
+          name={icon}
+          ariaHidden
+        />
+      )}
+      {text}
     </a>
   );
 };
-
-export default NavBarLink;

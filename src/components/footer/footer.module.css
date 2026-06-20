@@ -5,13 +5,26 @@
   font-size: var(--fs-md);
   line-height: var(--lh-md);
 
-  color: var(--color-text-secondary);
-  background-color: var(--color-background);
+  color: var(--neutral-600);
+  background-color: var(--neutral-0);
 }
 
 .link {
+  padding-right: 2px;
+  padding-left: 2px;
+
   text-transform: uppercase;
   text-decoration: underline;
   
-  color: var(--color-text-secondary);
+  color: var(--neutral-600);
+
+  &:hover, &:focus-visible {
+    color: var(--neutral-800);
+  }
+
+  &:focus-visible {
+    border-radius: calc(var(--border-radius) / 2);
+    outline: 2px solid var(--neutral-900);
+    outline-offset: 2px;
+  }
 }

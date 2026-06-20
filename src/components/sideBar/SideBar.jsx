@@ -1,7 +1,5 @@
-import Statistic from '../statistic/Statistic';
+import { Statistic } from '@/components';
 
-const SideBar = () => {
+export const SideBar = () => {
   return <Statistic />;
 };
-
-export default SideBar;
